@@ -1,9 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35527.113 d17.12
+VisualStudioVersion = 17.12.35527.113
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "zebra", "zebra\zebra.csproj", "{99E28A31-60C7-47F3-AB20-6CC82826AFBB}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "libs", "libs", "{0CBC2557-367C-49AA-8D32-9412DFF47E65}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zebra.Web", "Zebra.Web\Zebra.Web.csproj", "{187A0570-96BF-4C5F-847D-3F367D67E86D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zebra.Core", "libs\Zebra.Core\Zebra.Core.csproj", "{8D8EC0BB-7CCC-4011-AF98-B87ACB861B6A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,12 +15,19 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{99E28A31-60C7-47F3-AB20-6CC82826AFBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{99E28A31-60C7-47F3-AB20-6CC82826AFBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{99E28A31-60C7-47F3-AB20-6CC82826AFBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{99E28A31-60C7-47F3-AB20-6CC82826AFBB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{187A0570-96BF-4C5F-847D-3F367D67E86D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{187A0570-96BF-4C5F-847D-3F367D67E86D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{187A0570-96BF-4C5F-847D-3F367D67E86D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{187A0570-96BF-4C5F-847D-3F367D67E86D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D8EC0BB-7CCC-4011-AF98-B87ACB861B6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D8EC0BB-7CCC-4011-AF98-B87ACB861B6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D8EC0BB-7CCC-4011-AF98-B87ACB861B6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D8EC0BB-7CCC-4011-AF98-B87ACB861B6A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8D8EC0BB-7CCC-4011-AF98-B87ACB861B6A} = {0CBC2557-367C-49AA-8D32-9412DFF47E65}
 	EndGlobalSection
 EndGlobal
