@@ -14,9 +14,9 @@ namespace Zebra.Core.Senders
             _printerName = printerName ?? throw new ArgumentNullException(nameof(printerName));
         }
 
-        public bool SendCardToPrinter(string name, string cpr)
+        public bool SendCardToPrinter(string name, string cpr, string doctor)
         {
-            var personInfo = new PersonInfo(name, cpr,DateTime.Now.ToShortDateString());
+            var personInfo = new PersonInfo(name, cpr,doctor,DateTime.Now.ToShortDateString());
             return SendStringToPrinter(new ZplCard(personInfo).Text);
         }
         private bool SendStringToPrinter(string zplCommand)

@@ -21,6 +21,9 @@ namespace Zebra.Web.Pages
         [BindProperty]
         public string CPR { get; set; } = string.Empty;
 
+        [BindProperty]
+        public string Doctor { get; set; } = string.Empty;
+
         public void OnGet([FromQuery] string? name, [FromQuery] string? cpr)
         {
             // Populate properties from query parameters if they exist
@@ -31,7 +34,7 @@ namespace Zebra.Web.Pages
         public IActionResult OnPost()
         {
             // Example: Send ZPL command to the printer
-            bool success = _wireSender.SendCardToPrinter(Name, CPR);
+            bool success = _wireSender.SendCardToPrinter(Name, CPR, Doctor);
 
             if (success)
             {

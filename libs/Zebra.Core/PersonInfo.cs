@@ -2,5 +2,8 @@
 
 namespace zebra
 {
-    public record PersonInfo(string? Name, string? Cpr, string? Date);
+    public record PersonInfo(string? Name, string? Cpr, string? Date, string? Doctor)
+    {
+       
+    }
 }
